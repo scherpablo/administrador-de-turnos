@@ -244,7 +244,7 @@ function nuevaCita(e) {
         }
         
         transaction.onerror = () => {
-            ui.imprimirALerta("Hubo un error al querer editar el turno");               
+            ui.imprimirALerta("Hubo un error al querer editar el turno", "error");               
         }
         
     } else { 
@@ -266,7 +266,7 @@ function nuevaCita(e) {
         transaction.onerror = () => {           
 
             // Mensaje de error (horario no dispónible)
-            ui.imprimirALerta("Horario no disponible");            
+            ui.imprimirALerta("Horario no disponible", "error");            
         }   
 
         transaction.oncomplete = () => {           
